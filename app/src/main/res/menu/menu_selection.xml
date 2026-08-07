@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_select_all"
+        android:title="Select all"
+        android:icon="@android:drawable/checkbox_on_background"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_invert_selection"
+        android:title="Invert selection"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_selection_favorite"
+        android:title="Favorite"
+        android:icon="@android:drawable/btn_star_big_on"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_selection_hide"
+        android:title="Hide"
+        android:icon="@android:drawable/ic_secure"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_selection_lock"
+        android:title="Lock"
+        android:icon="@android:drawable/ic_lock_lock"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_selection_delete"
+        android:title="Delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="ifRoom" />
+</menu>

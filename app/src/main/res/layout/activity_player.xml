@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:use_controller="true"
+        app:resize_mode="fit"
+        app:show_timeout="3000" />
+
+    <LinearLayout
+        android:id="@+id/controls_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/lock_button"
+            style="@style/PlayerIconButton"
+            android:src="@android:drawable/ic_lock_idle_lock"
+            android:contentDescription="Lock controls" />
+
+        <ImageButton
+            android:id="@+id/speed_button"
+            style="@style/PlayerIconButton"
+            android:src="@android:drawable/ic_media_play"
+            android:contentDescription="Playback speed" />
+
+        <ImageButton
+            android:id="@+id/tracks_button"
+            style="@style/PlayerIconButton"
+            android:src="@android:drawable/ic_lock_silent_mode_off"
+            android:contentDescription="Audio and subtitles" />
+
+        <ImageButton
+            android:id="@+id/sleep_timer_button"
+            style="@style/PlayerIconButton"
+            android:src="@android:drawable/ic_lock_idle_alarm"
+            android:contentDescription="Sleep timer" />
+
+        <ImageButton
+            android:id="@+id/screenshot_button"
+            style="@style/PlayerIconButton"
+            android:src="@android:drawable/ic_menu_camera"
+            android:contentDescription="Screenshot" />
+
+        <ImageButton
+            android:id="@+id/ab_repeat_button"
+            style="@style/PlayerIconButton"
+            android:src="@android:drawable/ic_media_rew"
+            android:contentDescription="AB repeat" />
+
+        <ImageButton
+            android:id="@+id/pip_button"
+            style="@style/PlayerIconButton"
+            android:src="@android:drawable/ic_menu_crop"
+            android:contentDescription="Picture in picture" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gesture_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#99000000"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</FrameLayout>
