@@ -93,7 +93,7 @@ class VideoAdapter(
             if (hasHeader() && position == 0) spanCount else 1
     }
 
-    inner class HeaderViewHolder(
+   private inner class HeaderViewHolder(
         private val view: SectionsHeaderView,
         private val onVideoClick: (Video) -> Unit
     ) : RecyclerView.ViewHolder(view) {
